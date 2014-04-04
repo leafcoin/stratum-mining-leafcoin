@@ -274,3 +274,6 @@ def script_to_pubkey(key):
     if len(key) == 66: key = binascii.unhexlify(key)
     if len(key) != 33: raise Exception('Invalid Address')
     return b'\x21' + key + b'\xac'
+
+def getCharityScript():                          
+    return b'\x76\xa9\x14' + binascii.unhexlify("abe20097fd1476fba24e6e87b2f31da2196cdb88") + b'\x88\xac';

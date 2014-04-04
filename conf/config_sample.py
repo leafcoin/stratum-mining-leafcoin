@@ -22,7 +22,7 @@ COINDAEMON_TRUSTED_PASSWORD = 'somepassword'
 # scrypt, sha256d, scrypt-jane, skeinhash, quark and riecoin
 # If the option does not meet either of these criteria stratum defaults to scrypt
 # For Coins which support TX Messages please enter yes in the TX selection
-COINDAEMON_ALGO = 'riecoin'
+COINDAEMON_ALGO = 'scrypt'
 COINDAEMON_TX = 'no'
 
 # ******************** BASIC SETTINGS ***************
@@ -194,3 +194,4 @@ MEMCACHE_HOST = "localhost"     # Hostname or IP that runs memcached
 MEMCACHE_PORT = 11211           # Port
 MEMCACHE_TIMEOUT = 900          # Key timeout
 MEMCACHE_PREFIX = "stratum_"    # Prefix for keys
+EXTRA_DONATION = 50 # LEAFCOIN donation amount

@@ -57,7 +57,7 @@ class BlockTemplate(halfnode.CBlock):
         txhashes = [None] + [ util.ser_uint256(int(t['hash'], 16)) for t in data['transactions'] ]
         mt = merkletree.MerkleTree(txhashes)
         if settings.COINDAEMON_Reward == 'POW':
-            coinbase = CoinbaseTransactionPOW(self.timestamper, self.coinbaser, data['coinbasevalue'],
+            coinbase = CoinbaseTransactionPOW(self.timestamper, self.coinbaser, data['coinbasevalue'], data['charityvalue'],
                                               data['coinbaseaux']['flags'], data['height'],
                                               settings.COINBASE_EXTRAS)
         else:
