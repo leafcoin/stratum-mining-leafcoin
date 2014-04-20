@@ -37,7 +37,7 @@ class CoinbaseTransactionPOW(halfnode.CTransaction):
     
         # LEAFCOIN Charity Address Requirement
 		
-        charity_value = int(settings.DONATION)
+        charity_value = value*(settings.DONATION/100.0)
         if charity_value > value:
             charity_value = value
         
