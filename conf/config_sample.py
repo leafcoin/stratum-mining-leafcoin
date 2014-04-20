@@ -194,4 +194,4 @@ MEMCACHE_HOST = "localhost"     # Hostname or IP that runs memcached
 MEMCACHE_PORT = 11211           # Port
 MEMCACHE_TIMEOUT = 900          # Key timeout
 MEMCACHE_PREFIX = "stratum_"    # Prefix for keys
-DONATION = 50 # LEAFCOIN donation amount
+DONATION = 2 # LEAFCOIN donation amount (in percent)
